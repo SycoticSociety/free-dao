@@ -16,7 +16,7 @@ const App = () => {
   const network = useNetwork();
   console.log('👋 Address:', address);
   // Initialize our Edition Drop contract
-  const editionDropAddress = 'INSERT_EDITION_DROP_ADDRESS';
+  const editionDropAddress = '0xfF9F344D31AEBE256e7a4E8857E72C4E91e40983';
   const { contract: editionDrop } = useContract(
     editionDropAddress,
     'edition-drop',
