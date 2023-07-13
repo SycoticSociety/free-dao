@@ -27,7 +27,7 @@ const App = () => {
     'token',
   );
   const { contract: vote } = useContract(
-    'INSERT_VOTE_ADDRESS',
+    '0x29F3CAE5560A7AFa8209B2FbD3a3d43Fd25a0443',
     'vote',
   );
   // Hook to check if the user has our NFT
@@ -157,9 +157,9 @@ const App = () => {
   if (address && network?.[0].data.chain.chainId !== ChainId.Mumbai) {
     return (
       <div className="unsupported-network">
-        <h2>Please connect to Mumbai</h2>
+        <h2>Please connect to Cronos</h2>
         <p>
-          This dapp only works on the Mumbai network, please switch networks in
+          This dapp only works on the Cronos network, please switch networks in
           your connected wallet.
         </p>
       </div>
@@ -171,7 +171,7 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
+        <h1>FREE🪙COIN VOTE! Your FREE! Your VOICE</h1>
         <div className="btn-hero">
           <ConnectWallet theme='light' />
         </div>
@@ -184,7 +184,7 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1>🍪DAO Member Page</h1>
+        <h1>FREE🪙COIN VOTE!</h1>
         <p>Congratulations on being a member</p>
         <div>
           <div>
@@ -340,7 +340,7 @@ const App = () => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1>Mint your free 🍪DAO Membership NFT</h1>
+      <h1>Mint your FREE🪙COIN VOTE Membership NFT</h1>
       <div className="btn-hero">
         <Web3Button
           contractAddress={editionDropAddress}
