@@ -154,12 +154,12 @@ const App = () => {
     });
   }, [memberAddresses, memberTokenAmounts]);
 
-  if (address && network?.[0].data.chain.chainId !== ChainId.Mumbai) {
+  if (address && network?.[0].data.chain.chainId !== ChainId.fantom) {
     return (
       <div className="unsupported-network">
-        <h2>Please connect to Cronos</h2>
+        <h2>Please connect to Fantom</h2>
         <p>
-          This dapp only works on the Cronos network, please switch networks in
+          This Application only works on the Fantom network, please switch networks in
           your connected wallet.
         </p>
       </div>
