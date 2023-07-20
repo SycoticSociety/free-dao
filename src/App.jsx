@@ -185,7 +185,7 @@ const App = () => {
     return (
       <div className="member-page">
         <h1>FREE🪙COIN VOTE!</h1>
-        <p>Congratulations on being a member</p>
+        <p>Congratulations on being a member 🎊</p>
         <div>
           <div>
             <h2>Member List</h2>
