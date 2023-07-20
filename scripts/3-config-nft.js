@@ -3,11 +3,11 @@ import { readFileSync } from "fs";
 
 (async () => {
   try {
-    const editionDrop = await sdk.getContract("INSERT_EDITION_DROP_ADDRESS", "edition-drop");
+    const editionDrop = await sdk.getContract("0xBFa731D9a3Af69929Ea42054A84a69640C87dBfc", "edition-drop");
     await editionDrop.createBatch([
       {
-        name: "Leaf Village Headband",
-        description: "This NFT will give you access to NarutoDAO!",
+        name: "FREE COIN VOTE",
+        description: "This NFT will give you access to FREE🪙COIN DAO",
         image: readFileSync("scripts/assets/headband.png"),
       },
     ]);
