@@ -7,14 +7,14 @@ import "./index.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 
 // This is the chain your dApp will work on.
-const activeChain = "fantom";
+const activeChain = "Fantom";
 
 // Wrap your app with the thirdweb provider
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider activeChain={"fantom"}>
+    <ThirdwebProvider activeChain={"Fantom"}>
       <App />
     </ThirdwebProvider>
   </React.StrictMode>
