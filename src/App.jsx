@@ -16,18 +16,18 @@ const App = () => {
   const network = useNetwork();
   console.log('👋 Address:', address);
   // Initialize our Edition Drop contract
-  const editionDropAddress = '0xBFa731D9a3Af69929Ea42054A84a69640C87dBfc';
+  const editionDropAddress = '0xDbb23C394a99c34B5378508B306943fF07C94009';
   const { contract: editionDrop } = useContract(
     editionDropAddress,
     'edition-drop',
   );
   // Initialize our token contract
   const { contract: token } = useContract(
-    '0x77764b315782767F00738B5CEC77fd69d0C82E7A',
+    '0xDFD8a273f330374E8D24987132c70eA004263cfB',
     'token',
   );
   const { contract: vote } = useContract(
-    '0xA5485Db97F1689E4FeeCC8859B8e4359638704d1',
+    '0x3f0419a95614Ed9E007ccE3D3Ebb09A7eEFe52FD',
     'vote',
   );
   // Hook to check if the user has our NFT
