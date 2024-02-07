@@ -157,9 +157,9 @@ const App = () => {
   if (address && network?.[0].data.chain.chainId !== ChainId.fantom) {
     return (
       <div className="unsupported-network">
-        <h2>Please connect to Fantom</h2>
+        <h2>Please connect to mumbai</h2>
         <p>
-          This Application only works on the Fantom network, please switch networks in
+          This Application only works on the mumbai network, please switch networks in
           your connected wallet.
         </p>
       </div>
